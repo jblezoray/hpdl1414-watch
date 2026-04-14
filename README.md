@@ -10,7 +10,7 @@ If you're brave enougth, you'll find anything you need to build it yourself in t
 
 | Component | Details                                 |
 | --------- | --------------------------------------- |
-| MCU       | ATmega32                                |
+| MCU       | atmega328p                              |
 | Display   | HPDL-1414 (4 × 16-segment alphanumeric) |
 | RTC       | DS3231 (I2C)                            |
 | Storage   | EEPROM (SPI)                            |
