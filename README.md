@@ -6,6 +6,10 @@ If you're brave enougth, you'll find anything you need to build it yourself in t
 
 ![watch picture](media/watch.jpg)
 
+There is a demo of the watch on youtube:
+
+[![Watch demo video](https://img.youtube.com/vi/RL6VkV0jNk0/0.jpg)](https://www.youtube.com/watch?v=RL6VkV0jNk0)
+
 ## Hardware
 
 | Component | Details                                 |
