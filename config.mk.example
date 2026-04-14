@@ -1,11 +1,12 @@
 
-PROJECT_DIR=/Users/jbl/Dropbox/Projets/2024 06 21 HPDL 1414/
 ARDUINO_ROOT="/Users/jbl/Library/Arduino15/packages/arduino"
-ARDUINO_CLI="/Users/jbl/bin/arduino-cli"
+ARDUINO_CLI="/usr/local/bin/arduino-cli"
 
-SKETCH_DIR="./hpdl-1414"
+AVRDUDE="$(ARDUINO_ROOT)/tools/avrdude/8.0.0-arduino1/bin/avrdude"
+AVRDUDE_CONF="$(ARDUINO_ROOT)/tools/avrdude/8.0.0-arduino1/etc/avrdude.conf"
+
 ISP_SOURCE="https://raw.githubusercontent.com/arduino/arduino-examples/refs/heads/main/examples/11.ArduinoISP/ArduinoISP/ArduinoISP.ino"
 
-# retrieve these with "arduino-cli board list"
+# retrieve these with "make list-devices"
 FQBN     ?= arduino:avr:uno
 PORT     ?= /dev/cu.usbmodem14401

@@ -3,9 +3,6 @@
 # see https://www.nongnu.org/avrdude/user-manual/avrdude.html
 -include config.mk
 
-AVRDUDE="$(ARDUINO_ROOT)/tools/avrdude/6.3.0-arduino17/bin/avrdude"
-AVRDUDE_CONF="$(ARDUINO_ROOT)/tools/avrdude/6.3.0-arduino17/etc/avrdude.conf"
-
 AVRDUDE_ISP_CONF= -v  -C $(AVRDUDE_CONF)  -p atmega328p  -c arduino -P $(PORT) -b115200
 AVRDUDE_TARGET_CONF=-v  -C $(AVRDUDE_CONF)  -p atmega328p  -c stk500v1 -P $(PORT) -b19200
 
@@ -138,7 +135,7 @@ compile:
 		--fqbn "$(FQBN)" \
 		--export-binaries \
 		--output-dir "./build/hpdl-1414" \
-		"$(SKETCH_DIR)" \
+		"./hpdl-1414" \
 		--build-property "build.extra_flags=-DF_CPU=8000000L" \
 
 .PHONY: upload
