@@ -1,0 +1,12 @@
+.vscode/
+lib/ArduinoCore-avr/
+build/
+pcb/hpdl1414/kicad-intelligent-displays/
+pcb/kicad-intelligent-displays/
+pcb/hpdl1414/hpdl1414-backups/
+pcb/hpdl1414/production
+commandes/
+3dmodels/*.FCBak
+3dmodels/*.stl
+3dmodels/*.step
+config.mk
