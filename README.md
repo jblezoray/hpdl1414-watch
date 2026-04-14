@@ -45,9 +45,14 @@ src/
 3dmodels/              # Model for the 3D printed case
 ```
 
-## Watch PCB
+## Watch PCB schematics
 
-This is the first prototype of the PCB I made. It offers a full view of all the components on one side:
+Open the schematics (`pcb/hpdl1414/hpdl1414.kicad_sch` and `pcb/hpdl1414/hpdl1414.kicad_pcb`) with [kicad 9.0.1](https://www.kicad.org/).
+
+![schematics kicad](media/schematics_kicad.png)
+![pcb kicad](media/pcb_kicad.png)
+
+Here is the first prototype of the PCB I made. It offers a full view of all the components on one side:
 ![pcb v1](media/pcb_1.jpg)
 
 And here is the final one that is in the watch. It is much smaller:

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Display_IntelligentAlpha")(type "Legacy")(uri "${KIPRJMOD}/kicad-intelligent-displays/Display_IntelligentAlpha.lib")(options "")(descr ""))
+)
