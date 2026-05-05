@@ -108,13 +108,38 @@ FQBN=arduino:avr:uno      # FQBN of the ISP programmer board
 PORT=/dev/cu.usbmodem...  # port of the ISP programmer (make list-devices)
 ```
 
+### Prepare an arduino to use as an ISP programmer
+
+Plug the board to your computer and run:
+
+```bash
+# Flash the ISP programmer
+make flash-isp-programmer
+```
+
+Now the board can be used as an ISP programmer.
+
+### Plug the watch board to the ISP
+
+IMPORTANT: Remove the battery from the watch board before pluging it!
+
+Plug the ISP and the watch board:
+
+- Arduino ground to GND on the watch board
+- PIN 10 to RST
+- PIN 11 to MOSI
+- PIN 13 to CLK
+- 5V to VCC
+- PIN 12 to MISO
+
+My working setup:
+
+![ISP setup](media/isp_setup.jpg)
+
 ### Build & Flash
 
 ```bash
-# First time: flash the ISP programmer
-make flash-isp-programmer
-
-# Set fuses on the target ATmega32
+# First time: Set fuses on the target ATmega32
 make set-target-clock-fuses
 
 # Compile and upload the firmware
